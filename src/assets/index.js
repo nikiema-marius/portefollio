@@ -9,7 +9,7 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+import laravel from "./tech/laravel.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -17,16 +17,21 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
+import react_native from "./tech/react_native.png";
+import python from "./tech/python.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import orange from "./company/orange.png";
+import aline_solution from "./company/Aline-solution.png";
+import maissane from "./company/Maissane.png";
+import axium from "./company/axium.jpg";
 
 import carrent from "./carrent.png";
+import giga from "./giga_energie.png";
+import aline from "./aline-solution.png";
+import moustakbal from "./moustakbal.png";
+import cuvee from "./cuvee.png";
+import restaurant from "./restaurant.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -41,7 +46,7 @@ export {
   close,
   css,
   docker,
-  figma,
+  laravel,
   git,
   html,
   javascript,
@@ -49,14 +54,19 @@ export {
   nodejs,
   reactjs,
   redux,
-  tailwind,
-  typescript,
+  react_native,
+  python,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  axium,
+  maissane,
+  aline_solution,
+  orange,
   carrent,
   jobit,
   tripguide,
+  giga,
+  aline,
+  moustakbal,
+  cuvee,
+  restaurant,
 };

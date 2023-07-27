@@ -5,10 +5,10 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = ( {isMobile  }) => {
+const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
-  //console.log(computer);
+  console.log(computer);
 
   return (
     <mesh>
@@ -24,7 +24,7 @@ const Computers = ( {isMobile  }) => {
       />
       <primitive
         object={computer.scene}
-        scale={ isMobile ? 0.7 : 0.75}
+        scale={isMobile ? 0.7 : 0.75}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
@@ -36,7 +36,6 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    
     const mediaQuery = window.matchMedia("(max-width:500px)");
 
     setIsMobile(mediaQuery.matches);
@@ -44,18 +43,16 @@ const ComputersCanvas = () => {
     // definir une fonction callback qui changera l'evement
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
-    }
+    };
 
     // ajouter un fonction callback qui ecoute les changements des media
-    
-    mediaQuery.addEventListener('change', 
-    handleMediaQueryChange);
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
 
     // supprimer l'ecoute sur le media
     return () => {
-      mediaQuery.removeEventListener('change', 
-      handleMediaQueryChange);
-    }
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
   }, []);
 
   return (
